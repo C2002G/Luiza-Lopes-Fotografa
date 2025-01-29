@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ category_name }}</h2>
+<div class="photo-grid">
+    {% for photo in photos %}
+    <div class="photo-card">
+        <!-- Envolvendo a imagem em um link que abre em nova aba -->
+        <a href="{{ photo.url }}" target="_blank">
+            <img src="{{ photo.url }}" alt="{{ photo.title }}">
+            <p>{{ photo.title }}</p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
