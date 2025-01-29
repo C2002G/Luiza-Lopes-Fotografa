@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +6,7 @@
     <title>Luiza Lopes - Fotografia</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Nova navegação fixa -->
@@ -20,13 +20,6 @@
         </ul>
     </nav>
 
-    <header>
-        <div class="header-container">
-            <h1 class="photographer-name">LUIZA LOPES</h1>
-            <h2 class="tagline">A Arte da Fotografia</h2>
-            <h3 class="slogan">Me Permita Registrar Suas Memórias!</h3>
-        </div>
-    </header>
     <main>
         {% block content %}{% endblock %}
     </main>

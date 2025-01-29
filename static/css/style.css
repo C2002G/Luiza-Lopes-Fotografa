@@ -313,3 +313,105 @@ section {
 .nav-menu li a.active {
     border-bottom: 2px solid var(--white-color);
 }
+
+/* Seção Hero (Início) */
+.hero-section {
+    height: 100vh;
+    background-color: var(--wine-color); /* Mantém o fundo vinho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px; /* Compensa o padding-top do body */
+    padding-top: 90px; /* Adiciona espaço para o menu fixo */
+}
+
+/* Seção Sobre */
+.about-section {
+    padding: 80px 20px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 0 0 25%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 0 0 50%;
+}
+
+.about-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Seção Contato */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2em;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: var(--white-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        flex: 0 0 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        flex: 0 0 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
