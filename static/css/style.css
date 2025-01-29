@@ -1,7 +1,98 @@
 :root {
-    --wine-color: #8B0000; /* Cor vinho escuro */
+    --wine-color: #8B0000;
     --white-color: #FFFFFF;
 }
+
+/* ... existing code ... */
+
+/* Estilo do cabeçalho */
+:root {
+    --wine-color: #8B0000;
+    --white-color: #FFFFFF;
+}
+
+/* ... existing code ... */
+
+/* Estilo do cabeçalho */
+.header-container {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.photographer-name {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5em;
+    color: var(--white-color);
+    margin: 0;
+    letter-spacing: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5em;
+    color: var(--white-color);
+    margin: 0 0 30px 0; /* Adicionado margin-bottom */
+    letter-spacing: 3px;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+.slogan {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    color: var(--white-color);
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+    opacity: 0.95;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Animações */
+.photographer-name {
+    animation: fadeInDown 1s ease-out;
+}
+
+.tagline {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.slogan {
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
+/* ... rest of existing code ... */
+
+
 
 * {
     margin: 0;
