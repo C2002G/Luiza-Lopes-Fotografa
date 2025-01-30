@@ -260,6 +260,7 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90px;
 }
 
 .nav-menu {
@@ -284,8 +285,13 @@ nav h1 {
 }
 
 .logo {
-    max-height: 60px;
-    margin: 0 40px;
+    max-height: 300px;
+    max-width: 400px;
+    width: auto;
+    margin: 0 10px;
+    /* não afetar o layout*/
+    object-fit: contain;
+    vertical-align: middle;
 }
 
 /* Ajuste para o conteúdo não ficar escondido sob o cabeçalho fixo */
